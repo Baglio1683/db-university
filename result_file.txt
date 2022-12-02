@@ -20,3 +20,9 @@ WHERE `date_of_birth` <= "1991-12-2";
 
 //Ovviamente la query 3 vale se viene effettuata in data 2/12/2022
 
+QUERY 4 
+
+SELECT *
+FROM `courses`
+WHERE `period` = "I Semestre" 
+AND `year` = 1;  
