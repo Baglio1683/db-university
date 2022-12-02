@@ -39,3 +39,16 @@ QUERY 6
 SELECT *
 FROM `degrees`
 WHERE `level` = "magistrale";
+
+QUERY 7
+
+SELECT * FROM `departments`
+
+risposta : DA 12 Dipartimenti
+
+QUERY 8 
+
+SELECT * FROM `teachers` 
+WHERE `phone` IS NULL; 
+
+risposta: gli insegnanti senza numero di telefono sono 50; 
