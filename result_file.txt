@@ -1,0 +1,8 @@
+QUERY 1
+
+SELECT *
+FROM `students`
+WHERE `date_of_birth`
+BETWEEN "1990-01-0"
+AND "1990-12-31";
+
