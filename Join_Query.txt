@@ -33,5 +33,13 @@ INNER JOIN departments
 ON degrees.department_id = departments.id
 ORDER BY students.surname ASC; 
 
+QUERY 5
 
+SELECT degrees.name AS Nome_Corso, courses.name AS Nome_Materia, teachers.name AS Nome_Insegnate , teachers.surname AS Cognome_insegnante
+FROM `degrees` 
+INNER JOIN courses
+ON degrees.id = courses.degree_id
+INNER JOIN teachers
+ON courses.id = teachers.id
+ORDER BY teachers.surname ASC; 
 
