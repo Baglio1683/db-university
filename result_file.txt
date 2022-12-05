@@ -6,6 +6,12 @@ WHERE `date_of_birth`
 BETWEEN "1990-01-0"
 AND "1990-12-31";
 
+seconda soluzione
+
+SELECT *
+FROM `students`
+WHERE YEAR(`date_of_birth`) = 1990; 
+
 QUERY 2 
 
 SELECT *
@@ -42,7 +48,7 @@ WHERE `level` = "magistrale";
 
 QUERY 7
 
-SELECT * FROM `departments`
+SELECT * FROM `departments`;
 
 risposta : DA 12 Dipartimenti
 

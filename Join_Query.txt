@@ -1,0 +1,11 @@
+QUERY 1
+
+SELECT students.name AS Nome , students.surname AS Cognome, degrees.name AS Nome_Dipartimento
+FROM `students` 
+INNER JOIN `degrees`
+ON students.id = degrees.department_id
+WHERE degrees.name = "Corso di Laurea in Economia"; 
+
+QUERY 2 
+
+
