@@ -8,4 +8,11 @@ WHERE degrees.name = "Corso di Laurea in Economia";
 
 QUERY 2 
 
+SELECT departments.name AS Nome_Dipartimento, degrees.level AS Durata_Corso, degrees.name AS Nome_Corso
+FROM `departments` 
+INNER JOIN `degrees`
+ON departments.id = degrees.department_id
+WHERE departments.name = "Dipartimento di Neuroscienze"
+AND degrees.level = "Magistrale";  
+
 
