@@ -13,6 +13,15 @@ FROM `departments`
 INNER JOIN `degrees`
 ON departments.id = degrees.department_id
 WHERE departments.name = "Dipartimento di Neuroscienze"
-AND degrees.level = "Magistrale";  
+AND degrees.level = "Magistrale";
+
+QUERY 3
+
+SELECT teachers.name AS Nome, teachers.surname AS Cognome, courses.name AS Materia
+FROM `teachers`
+INNER JOIN courses
+on teachers.id = courses.degree_id
+WHERE teachers.id = 44; 
+
 
 
