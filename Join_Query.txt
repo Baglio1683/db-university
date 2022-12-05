@@ -43,3 +43,15 @@ INNER JOIN teachers
 ON courses.id = teachers.id
 ORDER BY teachers.surname ASC; 
 
+QUERY 6
+
+SELECT degrees.name AS Nome_Corso , departments.name AS Nome_Dipartimento, courses.name AS Nome_Materia, teachers.name, teachers.surname
+FROM `departments` 
+INNER JOIN `degrees`
+ON departments.id = degrees.department_id
+INNER JOiN `courses`
+ON degrees.id = courses.degree_id
+INNER JOIN teachers
+WHERE departments.name = "Dipartimento di Matematica"
+ORDER BY courses.name ASC; 
+
