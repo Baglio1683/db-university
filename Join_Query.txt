@@ -23,5 +23,15 @@ INNER JOIN courses
 on teachers.id = courses.degree_id
 WHERE teachers.id = 44; 
 
+QUERY 4
+
+SELECT * 
+FROM `students` 
+INNER JOIN degrees
+ON students.degree_id = degrees.id
+INNER JOIN departments
+ON degrees.department_id = departments.id
+ORDER BY students.surname ASC; 
+
 
 
