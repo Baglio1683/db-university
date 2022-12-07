@@ -4,11 +4,24 @@ SELECT COUNT(id), YEAR(`students`. `enrolment_date`) AS Year
 FROM `students`
 GROUP BY YEAR(`enrolment_date`); 
 
+Oppure 
+
+SELECT COUNT(*), YEAR(`students`. `enrolment_date`) AS Year
+FROM `students`
+GROUP BY YEAR(`enrolment_date`); 
+
 QUERY 2
 
 SELECT COUNT(id) AS numero_insegnanti , `teachers`. `office_address` AS indirizzo_edificio
 FROM `teachers`
 GROUP BY `office_address`; 
+
+Oppure 
+
+SELECT COUNT(*) AS numero_insegnanti , `teachers`. `office_address` AS indirizzo_edificio
+FROM `teachers`
+GROUP BY `office_address`; 
+
 
 QUERY 3 
 
@@ -16,9 +29,22 @@ SELECT COUNT(exam_id),`exam_student` . `exam_id`, AVG(vote) AS media_voto
 FROM `exam_student`
 GROUP BY `exam_id`
 
+Opppure 
+********************************
+SELECT `exam_student` . `exam_id`, AVG(vote) AS media_voto
+FROM `exam_student`
+GROUP BY `exam_id`
+
+
+
 QUERY 4 
 
 SELECT COUNT(department_id) AS numero_corsi , `department_id` AS ID_dipartimento
 FROM `degrees`
 GROUP BY `department_id`;  
 
+Oppure 
+
+SELECT COUNT(*) AS numero_corsi , `department_id` AS ID_dipartimento
+FROM `degrees`
+GROUP BY `department_id`; 

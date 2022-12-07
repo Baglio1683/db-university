@@ -3,7 +3,7 @@ QUERY 1
 SELECT students.name AS Nome , students.surname AS Cognome, degrees.name AS Nome_Dipartimento
 FROM `students` 
 INNER JOIN `degrees`
-ON students.id = degrees.department_id
+ON students.degrees_id = degrees.id
 WHERE degrees.name = "Corso di Laurea in Economia"; 
 
 QUERY 2 
@@ -22,6 +22,8 @@ FROM `teachers`
 INNER JOIN courses
 on teachers.id = courses.degree_id
 WHERE teachers.id = 44; 
+
+****** MANCA TABELLLA PONTE, DA SISTEMARE 
 
 QUERY 4
 
@@ -43,6 +45,8 @@ INNER JOIN teachers
 ON courses.id = teachers.id
 ORDER BY teachers.surname ASC; 
 
+****** MANCA TABELLLA PONTE, DA SISTEMARE 
+
 QUERY 6
 
 SELECT degrees.name AS Nome_Corso , departments.name AS Nome_Dipartimento, courses.name AS Nome_Materia, teachers.name, teachers.surname
@@ -54,4 +58,9 @@ ON degrees.id = courses.degree_id
 INNER JOIN teachers
 WHERE departments.name = "Dipartimento di Matematica"
 ORDER BY courses.name ASC; 
+
+
+****PROVARE TABELLA PONTE 
+
+
 
